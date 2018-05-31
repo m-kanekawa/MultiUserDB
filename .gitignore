@@ -6,4 +6,3 @@ __pycache__
 /venv/
 myapp/migrations
 /static/
-readme.md
