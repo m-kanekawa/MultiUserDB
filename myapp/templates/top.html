@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MultiUserDB</title>
+  </head>
+  <body>
+    Hello {{user}}!<br>
+    <table>
+  		<tr><th>Name</th><th>Age</th></tr>
+  	  {% for person in people %}
+  	  	<tr><td>{{ person.name }}</td><td>{{ person.age }}</td></tr>
+  	  {% endfor %}
+  	</table>
+    <a href="{% url 'myapp:view_add_person' %}">Add Person</a><br>
+    <a href="{% url 'login' %}">Logout</a>
+  </body>
+</html>

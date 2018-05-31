@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+__pycache__
+*.sqlite3
+.DS_Store
+/venv/
+myapp/migrations
+/static/
+readme.md
